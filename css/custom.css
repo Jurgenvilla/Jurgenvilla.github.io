@@ -2,12 +2,6 @@
  * Your custom CSS file
  *************************************************************************/
 
-body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-}
 .social-icons{
     display: flex;
 }

@@ -126,6 +126,13 @@
     border-top-color: #527fa6;
 }
 
+.social-icon--linkedin .tooltip{
+    background: #007bb5;
+    columns: currentColor;
+}
+.social-icon--linkedin .tooltip:after{
+    border-top-color: #527fa6;
+}
 
 .social-icon--github .tooltip{
     background: #4284c0;

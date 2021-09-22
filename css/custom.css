@@ -188,8 +188,8 @@
 
 /* Style the images inside the grid */
 .column img {
-  opacity: 0.8; 
-  cursor: pointer; 
+  opacity: 0.8;
+  cursor: pointer;
 }
 
 .column img:hover {
@@ -203,7 +203,7 @@
   clear: both;
 }
 
-/* The expanding image container */
+/* The expanding image container (positioning is needed to position the close button and the text) */
 .container {
   position: relative;
   display: none;
@@ -218,7 +218,7 @@
   font-size: 20px;
 }
 
-/* Closable button inside the expanded image */
+/* Closable button inside the image */
 .closebtn {
   position: absolute;
   top: 10px;

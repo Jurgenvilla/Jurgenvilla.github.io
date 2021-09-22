@@ -31,32 +31,39 @@
             
             <h2>One of my hobbies ...</h2>
 
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href="GrandBornand.jpg">
-      <img src="img/GrandBornand.jpg" alt="Le Grand-Bornand" width="600" height="400">
-    </a>
-    <div class="desc">Le Grand-Bornand, Haute-Savoie, Winter 2020</div>
+<div class="row">
+  <div class="column">
+    <img src="Haute-Savoie.jpg" alt="Nature" style="width:100%" onclick="myFunction(this);">
   </div>
-</div>  
-            
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href="Aravis.jpg">
-      <img src="img/Aravis.jpg" alt="Chaîne des Aravis" width="600" height="400">
-    </a>
-    <div class="desc">La chaîne des Aravis, Haute-Savoie, Winter 2020</div>
+  <div class="column">
+    <img src="Haute-Savoie.jpg" alt="Snow" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="Haute-Savoie.jpg" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="Haute-Savoie.jpg" alt="Lights" style="width:100%" onclick="myFunction(this);">
   </div>
 </div>
-  
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href="HauteSavoie.jpg">
-      <img src="img/HauteSavoie.jpg" alt="Haute-Savoie" width="600" height="400">
-    </a>
-    <div class="desc">Lost in the Alps, Haute-Savoie, Winter 2020 </div>
-  </div>
-</div>            
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+
+<script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+</script>
+            
+            
+            
 <!--           </div>
           <div class="flex-item flex-column"> -->
           </div>
